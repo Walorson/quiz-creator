@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('scroll-bar.css');
+body {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #2a2a2a;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.nav {
+    font-weight: bolder;
+    background-color: #181818;
+    padding: 20px 40px;
+    font-size: 2.2rem;
+}
+footer {
+    margin-top: auto;
+    background-color: #0c0c0c;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 1.1rem;
+}

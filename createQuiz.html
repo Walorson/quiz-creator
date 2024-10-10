@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Creator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="IE=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/window.css">
+    <link rel="stylesheet" href="css/question.css">
+</head>
+<body>
+    <div class="window" id="window">
+        <div class="window-bar"><div class="x">X</div></div>
+        <h2>Add a new Question</h2>
+        <p class="p"><input type="text" placeholder="Title" id="title-of-new-question"></p>
+        <p> <span>Type:</span>
+            <select id="type-of-question">
+                <option value="radio">Radio</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="text">Text</option>
+                <option value="number">Number</option>
+            </select>
+        </p>
+        <button class="window-button" id="create-question">Create</button>
+    </div>
+    <div class="blur" id="blur"></div>
+    <div class="nav">Quiz Creator</div>
+    <div class="container">
+        <h2>Create a new Quiz</h2>
+        <p class="p" data-maxlength><input type="text" placeholder="Title" maxlength="50"><span id="title-maxlength">50</span></p>
+        <p class="p" data-maxlength><input type="text" placeholder="Description" maxlength="200"><span id="desc-maxlength">200</span></p>
+        <p class="p"><input type="text" placeholder="Keywords"></p>
+        <div class="help-box">Wypisz tagi, które będą opisywać twój quiz, każdy odzielony przecinkiem.</div>
+        <h2>Add a Question</h2>
+        <div class="questions" id="questions">
+            
+        </div>
+        <div class="addQuestion" id="addQuestion">+</div>
+    </div>
+    <footer>QuizCreator &copy All rights reserved 2021</footer>
+    <script src="js/question.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/enterEvents.js"></script>
+</body>
+</html>
